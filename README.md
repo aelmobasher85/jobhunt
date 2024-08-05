@@ -1,0 +1,10 @@
+Flask
+Flask-Mail
+Flask-SQLAlchemy
+Flask-Static-Compress
+feedparser
+flask-apscheduler
+flask-static-compress
+flask==3.0.1
+gunicorn
+werkzeug==3.0.1
