@@ -1,0 +1,10 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="container">
+    <h2>Recent Job Alerts</h2>
+    <ul class="list-group">
+    {% for alert in alerts %}
+        <li class="list-group-item">
+            <h4>{{ alert.title }}</h4>
+            <p>{{ alert.description | truncate(200) }}</p>
+            <a href="{{ alert.link }}" target="_blank" class="btn btn-primary btn-sm">View Job</

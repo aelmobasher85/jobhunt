@@ -1,0 +1,25 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="container">
+    <h2>User Settings</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="rss_feed_url">Upwork RSS Feed URL:</label>
+            <input type="url" class="form-control" id="rss_feed_url" name="rss_feed_url" required>
+        </div>
+        <div class="form-group">
+            <label for="daily_email_limit">Daily Email Limit:</label>
+            <select class="form-control" id="daily_email_limit" name="daily_email_limit">
+                <option value="3">3 emails per day</option>
+                <option value="5">5 emails per day</option>
+                <option value="10">10 emails per day</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Settings</button>
+    </form>
+</div>
+{% endblock %}
